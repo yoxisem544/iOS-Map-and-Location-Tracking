@@ -14,6 +14,10 @@
 		633837D11A7F0EA1007F92DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633837D01A7F0EA1007F92DD /* Images.xcassets */; };
 		633837D41A7F0EA1007F92DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633837D21A7F0EA1007F92DD /* LaunchScreen.xib */; };
 		633837E01A7F0EA2007F92DD /* learnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633837DF1A7F0EA2007F92DD /* learnTests.m */; };
+		633837F31A80F775007F92DD /* play3.png in Resources */ = {isa = PBXBuildFile; fileRef = 633837F21A80F775007F92DD /* play3.png */; };
+		633837F51A80F7AC007F92DD /* update.png in Resources */ = {isa = PBXBuildFile; fileRef = 633837F41A80F7AC007F92DD /* update.png */; };
+		633837F91A81264E007F92DD /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 633837F81A81264E007F92DD /* flag.png */; };
+		633837FF1A812CDE007F92DD /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 633837FE1A812CDE007F92DD /* MyAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		633837D91A7F0EA2007F92DD /* learnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		633837DE1A7F0EA2007F92DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633837DF1A7F0EA2007F92DD /* learnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learnTests.m; sourceTree = "<group>"; };
+		633837F21A80F775007F92DD /* play3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play3.png; sourceTree = "<group>"; };
+		633837F41A80F7AC007F92DD /* update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = update.png; sourceTree = "<group>"; };
+		633837F81A81264E007F92DD /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		633837FD1A812CDE007F92DD /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		633837FE1A812CDE007F92DD /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +72,14 @@
 		633837B71A7F0EA1007F92DD = {
 			isa = PBXGroup;
 			children = (
+				633837FD1A812CDE007F92DD /* MyAnnotation.h */,
+				633837FE1A812CDE007F92DD /* MyAnnotation.m */,
 				633837C21A7F0EA1007F92DD /* learn */,
 				633837DC1A7F0EA2007F92DD /* learnTests */,
 				633837C11A7F0EA1007F92DD /* Products */,
+				633837F21A80F775007F92DD /* play3.png */,
+				633837F41A80F7AC007F92DD /* update.png */,
+				633837F81A81264E007F92DD /* flag.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +182,11 @@
 				TargetAttributes = {
 					633837BF1A7F0EA1007F92DD = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					633837D81A7F0EA2007F92DD = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -200,8 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				633837CF1A7F0EA1007F92DD /* Main.storyboard in Resources */,
+				633837F31A80F775007F92DD /* play3.png in Resources */,
+				633837F91A81264E007F92DD /* flag.png in Resources */,
 				633837D41A7F0EA1007F92DD /* LaunchScreen.xib in Resources */,
 				633837D11A7F0EA1007F92DD /* Images.xcassets in Resources */,
+				633837F51A80F7AC007F92DD /* update.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +243,7 @@
 			files = (
 				633837CC1A7F0EA1007F92DD /* ViewController.m in Sources */,
 				633837C91A7F0EA1007F92DD /* AppDelegate.m in Sources */,
+				633837FF1A812CDE007F92DD /* MyAnnotation.m in Sources */,
 				633837C61A7F0EA1007F92DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
